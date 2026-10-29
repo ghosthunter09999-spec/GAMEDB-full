@@ -1,0 +1,14 @@
+{
+  "name": "gamedb-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "Connection.js",
+  "scripts": {
+    "start": "node Connection.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "mongoose": "^8.7.0"
+  }
+}

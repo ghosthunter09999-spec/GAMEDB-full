@@ -1,0 +1,153 @@
+/* Global styles for GameDB */
+:root {
+  --gamedb-yellow: #ffc107;
+  --gamedb-dark: #1a1a2e;
+  --gamedb-card-bg: #16213e;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #0f0f1a;
+  color: #e8e8e8;
+  min-height: 100vh;
+}
+
+.navbar-brand {
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.navbar .nav-link {
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navbar .nav-link:hover {
+  color: var(--gamedb-yellow) !important;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  padding: 5rem 0;
+  border-bottom: 3px solid var(--gamedb-yellow);
+}
+
+.hero-section h1 {
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+.hero-section .lead {
+  font-size: 1.25rem;
+  opacity: 0.9;
+}
+
+.game-card {
+  background-color: var(--gamedb-card-bg);
+  border: 1px solid rgba(255, 193, 7, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(255, 193, 7, 0.15) !important;
+}
+
+.game-card .card-img-top {
+  height: 180px;
+  object-fit: cover;
+  background: linear-gradient(45deg, #0f3460, #16213e);
+}
+
+.table-dark {
+  --bs-table-bg: #16213e;
+  --bs-table-border-color: rgba(255, 193, 7, 0.15);
+}
+
+.table-dark thead {
+  border-bottom: 2px solid var(--gamedb-yellow);
+}
+
+.form-page {
+  min-height: calc(100vh - 180px);
+  padding: 3rem 0;
+}
+
+.form-card {
+  background-color: #16213e;
+  border: 1px solid rgba(255, 193, 7, 0.25);
+  border-radius: 12px;
+}
+
+.form-card .card-header {
+  background: linear-gradient(90deg, #1a1a2e, #0f3460);
+  border-bottom: 2px solid var(--gamedb-yellow);
+  border-radius: 12px 12px 0 0 !important;
+}
+
+.form-label {
+  font-weight: 600;
+  color: #ffc107;
+}
+
+.form-control,
+.form-select {
+  background-color: #0f0f1a;
+  border-color: rgba(255, 193, 7, 0.3);
+  color: #e8e8e8;
+}
+
+.form-control:focus,
+.form-select:focus {
+  background-color: #0f0f1a;
+  border-color: #ffc107;
+  color: #e8e8e8;
+  box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.25);
+}
+
+.form-control::placeholder {
+  color: #6c757d;
+}
+
+.form-control.is-invalid,
+.form-select.is-invalid {
+  border-color: #dc3545;
+}
+
+.invalid-feedback {
+  display: block;
+}
+
+.footer {
+  background-color: #1a1a2e;
+  border-top: 2px solid var(--gamedb-yellow);
+  padding: 2rem 0;
+  margin-top: auto;
+}
+
+.section-title {
+  font-weight: 700;
+  border-left: 4px solid var(--gamedb-yellow);
+  padding-left: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.rating-badge {
+  background-color: var(--gamedb-yellow);
+  color: #1a1a2e;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.news-item {
+  border-left: 3px solid var(--gamedb-yellow);
+  padding-left: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+}
